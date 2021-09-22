@@ -33,7 +33,7 @@ public class UserServiceImpl implements UserService {
         TUser user = userMapper.selectByPrimaryKey(id);
         UserVO userVO = new UserVO();
         BeanUtils.copyProperties(user, userVO);
-      //  System.out.println("进入此方法");
+//        System.out.println("进入获取用户方法。。。");
         return userVO;
     }
 }

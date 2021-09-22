@@ -9,7 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 @MapperScan("com.tomorrowcat.userapp.mapper")
 @EnableDubboConfig
-@DubboComponentScan("com.tomorrowcat.userapp.service.dubbo")
+@DubboComponentScan("com.tomorrowcat.userapp.service.dubbo")  //扫描dubbo服务
 public class UserAppApplication {
 
     public static void main(String[] args) {

@@ -1,11 +1,13 @@
 server:
-   port: 8061
+   port: 8062
+
 druid:
   allow:
      ip: 127.0.0.1
   login:
      user_name:
      password:
+
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
@@ -31,7 +33,7 @@ spring:
 dubbo:
   application:
     name: user-app
-    qosPort: 22261
+    qosPort: 22262
   # 使用 zookeeper 注册中心暴露服务，注意要先开启 zookeeper
   # 注册中心id
   registry:
@@ -41,12 +43,12 @@ dubbo:
     # 注册中心地址
     address: kim2:2181
 
-  # dubbo协议在20880端口暴露服务
+
   # 协议名称
   protocol:
     name: dubbo
     # 协议端口
-    port: 20861
+    port: 20862
     # 协议访问log
     accesslog: dubbo-access.log
   # 重试次数

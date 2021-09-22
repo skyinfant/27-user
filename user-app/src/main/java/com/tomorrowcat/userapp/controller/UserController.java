@@ -1,16 +1,24 @@
 package com.tomorrowcat.userapp.controller;
 
 import com.tomorrowcat.userServiceApi.service.UserService;
+import jdk.nashorn.internal.ir.annotations.Reference;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
 @RestController
 public class UserController {
 
-    @Autowired
+    @Autowired   //用autowired也可以正常使用
     private UserService userService;
+
+//    @Reference
+//    private UserService userService;
 
 
     /**
@@ -26,8 +34,5 @@ public class UserController {
     }
 
 
-    @RequestMapping("test")
-    public String test(){
-        return "12345";
-    }
+
 }

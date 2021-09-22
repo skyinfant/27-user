@@ -4,7 +4,7 @@ import org.apache.dubbo.config.MetadataReportConfig;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 /**
- * @description: 配置dubbo的元数据信息，这样才dubbo管控台才能显示
+ * @description: 配置dubbo的元数据信息，这样在dubbo管控台才能查看
  * @param: null
  * @return null
  * @author: kim
