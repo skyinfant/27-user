@@ -11,9 +11,9 @@ druid:
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://kim1:3306/27_coupon?autoReconnect=true&failOverReadOnly=false&useUnicode=true&characterEncoding=UTF-8&useSSL=false
-    username: root
-    password: 123
+    url: jdbc:mysql://
+    username: 
+    password: 
     type: com.alibaba.druid.pool.DruidDataSource
     initial-size: 1
     max-wait-millis: 60000
@@ -41,7 +41,7 @@ dubbo:
     # 注册中心协议
     protocol: zookeeper
     # 注册中心地址
-    address: kim2:2181
+    address: 
 
 
   # 协议名称
@@ -61,7 +61,7 @@ dubbo:
 #    protocol: registry
 #  config-center:
 #    protocol: zookeeper
-#    address: kim2:2181
+#    address: 
 #  metadata-report:
 #    # 注册中心协议
 #    protocol: zookeeper
